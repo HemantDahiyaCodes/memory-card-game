@@ -1,8 +1,8 @@
 async function fetchPokemonData() {
   const pokemonDataArray = []; // Store images objects
 
-  while(pokemonDataArray.length < 18) {
-    const randomDex = Math.floor(Math.random() * 200) + 1;
+  while(pokemonDataArray.length < 10) {
+    const randomDex = Math.floor(Math.random() * 100) + 1;
     const response = await fetch(
       `https://pokeapi.co/api/v2/pokemon/${randomDex}`
     );

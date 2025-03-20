@@ -38,7 +38,7 @@ function GamePlay() {
 
     const clickedImage = e.target.id;
 
-    if (clickedImages.includes(parseFloat(clickedImage)) || clickedImages.length === 15 ) {
+    if (clickedImages.includes(parseFloat(clickedImage)) || clickedImages.length === 10 ) {
       alert("Game Over!");
       setHighestScore(() => score);
       setScore(() => 0);
